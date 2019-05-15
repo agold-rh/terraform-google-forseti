@@ -68,3 +68,9 @@ output "suffix" {
   description = "The random suffix appended to Forseti resources"
   value       = "${local.random_hash}"
 }
+
+output "project_id" {
+  description = "Google Project ID into which Forseti was deployed"
+  value       = "${var.project_id}"
+}
+   
